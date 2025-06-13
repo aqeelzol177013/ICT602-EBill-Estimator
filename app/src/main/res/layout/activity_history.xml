@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#1C1C1E"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="History of Bills"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black"
+        android:layout_gravity="center_horizontal"
+        android:padding="16dp"
+        android:textColor="#007AFF" />
+
+    <ListView
+        android:id="@+id/listViewHistory"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#1B1A1A"
+        android:backgroundTint="#1D1A1A"
+        android:divider="#2C2C2E"
+        android:dividerHeight="1dp"
+        android:foregroundTint="#F0EAEA"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp" />
+</LinearLayout>

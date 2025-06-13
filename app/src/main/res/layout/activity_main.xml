@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#1C1C1E"
+    android:padding="24dp">
+
+    <!-- App Title -->
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="monospace"
+        android:padding="16dp"
+        android:text="EBill Estimator"
+        android:textColor="#007AFF"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <!-- App Icon -->
+    <ImageView
+        android:id="@+id/imageViewIcon"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/logo"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="App Icon"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Input Fields -->
+    <EditText
+        android:id="@+id/editTextMonth"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Enter Month (e.g., Jan)"
+        android:inputType="textCapWords"
+        android:background="#2C2C2E"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#A0A0A0"
+        android:paddingLeft="12dp"
+        android:fontFamily="sans-serif"
+        android:textSize="16sp"
+        android:layout_marginBottom="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:gravity="center_vertical"/>
+
+    <EditText
+        android:id="@+id/editTextUnits"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Enter Units (kWh)"
+        android:inputType="numberDecimal"
+        android:background="#2C2C2E"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#A0A0A0"
+        android:paddingLeft="12dp"
+        android:fontFamily="sans-serif"
+        android:textSize="16sp"
+        android:layout_marginBottom="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:gravity="center_vertical"/>
+
+    <EditText
+        android:id="@+id/editTextRebate"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Enter Rebate (%)"
+        android:inputType="numberDecimal"
+        android:background="#2C2C2E"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#A0A0A0"
+        android:paddingLeft="12dp"
+        android:fontFamily="sans-serif"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"
+        android:paddingRight="12dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:gravity="center_vertical"/>
+
+    <!-- Calculate Button -->
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:text="Calculate"
+        android:backgroundTint="#007AFF"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-medium"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="20dp"
+        android:elevation="4dp"/>
+
+    <!-- Results -->
+    <TextView
+        android:id="@+id/textViewTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Charges: $0.00"
+        android:textColor="#F2F2F7"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/textViewFinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Final Cost: $0.00"
+        android:textColor="#FF2D55"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Button Container - Side by Side and Centered -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/buttonAboutUs"
+            android:layout_width="130dp"
+            android:layout_height="44dp"
+            android:text="About Me"
+            android:backgroundTint="#007AFF"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginEnd="12dp"
+            android:elevation="4dp"/>
+
+        <Button
+            android:id="@+id/buttonViewHistory"
+            android:layout_width="130dp"
+            android:layout_height="44dp"
+            android:text="View History"
+            android:backgroundTint="#007AFF"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginStart="12dp"
+            android:elevation="4dp"/>
+    </LinearLayout>
+
+</LinearLayout>
